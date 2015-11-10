@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+
   root 'welcome#index'
-  
+  get 'welcome/index'  
   post 'bid' => 'page#auction'
   get 'items' => 'items#show'
   get 'paint2' => 'items#paint2'
